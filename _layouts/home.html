@@ -1,5 +1,5 @@
 {% for file in site.static_files %}
 	{% if file.image %}
-		{{ site.baseurl }}<br>
+		{{ file.path }}<br>
 	{% endif %}
 {% endfor %}
