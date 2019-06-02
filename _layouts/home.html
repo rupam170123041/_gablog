@@ -1,5 +1,5 @@
 {% for file in site.static_files %}
 	{% if file.image %}
-		<img src="assets/img/cat-4189697_960_720.jpg" alt="{{file.name}}"><br>
+		<img src="assets/img/{{file.name}}" alt="{{file.name}}"><br>
 	{% endif %}
 {% endfor %}
