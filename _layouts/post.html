@@ -1,0 +1,15 @@
+---
+layout: "wrapper"
+---
+{% if page.title == "my post"%}
+	This is the first post
+{% elsif page.title == "This is the new title"%}
+	This is another post
+{% else %}
+	Jhingalala huhu
+	
+{% endif %}
+{{ page.title }}
+<hr>
+
+{{ content }}
