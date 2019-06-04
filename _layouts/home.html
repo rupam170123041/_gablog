@@ -5,10 +5,15 @@
 		text-color: red;
 		background-color:green;
 	}
+	.image-dec{
+		border-radius:50%;
+		border-color:orange;
+		border-width:10 px;
+	}
 </style>
 <h1><b>This is my first site.</b></h1>
 {% for file in site.static_files %}
 	{% if file.image %}
-		<img src="assets/img/{{file.name}}" alt="{{file.name}}"><br>
+		<img class="image-dec" src="assets/img/{{file.name}}" alt="{{file.name}}"><br>
 	{% endif %}
 {% endfor %}
